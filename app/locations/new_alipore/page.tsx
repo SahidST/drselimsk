@@ -43,7 +43,9 @@ const NewAliporePage = () => {
       latitude: 22.5141,
       longitude: 88.3201
     },
-    gmbUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.0!2d88.3201!3d22.5141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMwJzUwLjgiTiA4OMKwMTknMTIuNCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+    // Note: This embed URL is a placeholder. The actual Google Maps embed URL should be obtained from:
+    // https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA -> Share -> Embed a map
+    gmbUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.0!2d88.3201!3d22.5141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMwJzUwLjgiTiA4OMKwMTknMTIuNCJF!5e0!3m2!1sen!2sin!4v1735028889000!5m2!1sen!2sin"
   };
 
   const services = [
@@ -489,7 +491,7 @@ const NewAliporePage = () => {
               {
                 "@type": "PropertyValue",
                 "name": "Emergency Services",
-                "value": "Available in Need"
+                "value": "Available as Needed"
               },
               {
                 "@type": "PropertyValue",
