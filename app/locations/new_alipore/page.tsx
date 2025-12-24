@@ -21,13 +21,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in New Alipore",
-  description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in New Alipore. Offering expert pet care, surgery, and emergency services. Call +91 6291630297.",
-  keywords:
-    "Dr Selim SK veterinarian New Alipore, veterinary doctor Diamond Harbour Road, pet doctor South Kolkata, animal hospital Alipore 700027",
+  title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) in New Alipore | Vet Clinic Kolkata",
+  description: "Expert veterinary care at Dr. Selim Sk's clinic in New Alipore, Kolkata. We offer 24/7 emergency services, pet grooming, advanced diagnostics, and boarding facilities. Call +91 6291630297 to book an appointment.",
+  keywords: "Dr Selim Sk veterinary doctor New Alipore, pet doctor Alipore, animal hospital Diamond Harbour Road, vet near Majherhat Station, veterinary clinic Kolkata, pet grooming New Alipore, large animal care South Kolkata, boarding facilities Alipore",
   openGraph: {
-    title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in New Alipore",
-    description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in New Alipore. Expert pet care, surgery, and emergency services.",
+    title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) in New Alipore | Vet Clinic Kolkata",
+    description: "Expert veterinary care at Dr. Selim Sk's clinic in New Alipore, Kolkata. We offer 24/7 emergency services, pet grooming, advanced diagnostics, and boarding facilities.",
     url: "https://www.drselimsk.com/locations/new_alipore",
     type: "website",
     locale: "en_IN",
@@ -183,11 +182,11 @@ const NewAliporePage = () => {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
-                  Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in New Alipore
+                  Dr. Selim Sk (Veterinary Doctor & Surgeon) - New Alipore, Kolkata
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Professional and compassionate veterinary care from the heart of South Kolkata. Our New Alipore clinic, conveniently located at Pet&apos;s Need on Diamond Harbour Road, is fully equipped to handle everything from routine checkups to emergencies.
+                Welcome to our state-of-the-art veterinary clinic in New Alipore, serving pet owners in Alipore, Taratala, and surrounding South Kolkata areas. We offer comprehensive veterinary care including advanced diagnostics, professional pet grooming, safe boarding facilities, large animal care, and 24/7 emergency services.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -200,7 +199,7 @@ const NewAliporePage = () => {
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-green-600" />
                   <span className="text-slate-700">
-                    Daily 10:00 AM - 10:00 PM
+                    Daily 10:00 AM - 10:00 PM | 24/7 Emergency Services
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -239,7 +238,7 @@ const NewAliporePage = () => {
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
                 <Image
                   src="/images/hero-veterinary.webp"
-                  alt="Dr. Selim SK (VETERINARY DOCTOR & SURGEON) New Alipore Clinic"
+                  alt="Dr. Selim Sk's Veterinary Clinic in New Alipore, Kolkata - Modern pet care facility"
                   width={400}
                   height={320}
                   className="w-full h-80 object-cover rounded-lg"
@@ -247,10 +246,10 @@ const NewAliporePage = () => {
                 />
                 <div className="mt-4 text-center">
                   <h3 className="text-lg font-bold text-slate-900">
-                    Professional Veterinary Care
+                    Full-Service Veterinary Facility
                   </h3>
                   <p className="text-slate-600">
-                    Serving South Kolkata with excellence
+                    Complete pet care under one roof in New Alipore
                   </p>
                 </div>
               </div>
@@ -666,11 +665,10 @@ const NewAliporePage = () => {
       <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Visit Our New Alipore Clinic
+            Visit Our New Alipore Veterinary Clinic
           </h2>
           <p className="text-xl mb-8 text-amber-100">
-            Professional veterinary care in South Kolkata with emergency
-            services available
+            Expert veterinary care with modern facilities including diagnostics, grooming, boarding, and large animal care. Serving New Alipore, Alipore, Taratala, and surrounding areas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -705,16 +703,17 @@ const NewAliporePage = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
-            "name": locationDetails.businessName,
-            "description": "Professional veterinary care in New Alipore, South Kolkata with emergency services and large animal care",
+            "name": "Dr. Selim Sk (Veterinary Doctor & Surgeon)",
+            "image": "https://www.drselimsk.com/images/hero-veterinary.webp",
+            "@id": "https://www.drselimsk.com/locations/new_alipore",
             "url": locationDetails.websiteUrl,
             "telephone": locationDetails.phoneNumber,
-            "email": "mstgunahar@gmail.com",
+            "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": locationDetails.streetAddress,
               "addressLocality": locationDetails.addressLocality,
-              "addressRegion": locationDetails.addressRegion,
+              "addressRegion": "WB",
               "postalCode": locationDetails.postalCode,
               "addressCountry": locationDetails.addressCountry
             },
@@ -723,35 +722,60 @@ const NewAliporePage = () => {
               "latitude": locationDetails.geoCoordinates.latitude.toString(),
               "longitude": locationDetails.geoCoordinates.longitude.toString()
             },
-            "openingHours": "Mo-Su 10:00-22:00",
-            "priceRange": "₹₹",
-            "paymentAccepted": ["Cash", "UPI"],
-            "emergencyService": true,
-            "hasMap": "https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "10:00",
+              "closes": "22:00"
+            },
             "areaServed": [
-              locationDetails.addressLocality,
+              "New Alipore",
               "Alipore", 
-              "South Kolkata", 
-              "Taratala", 
-              "Diamond Harbour Road"
+              "Taratala",
+              "Diamond Harbour Road",
+              "South Kolkata"
             ],
             "additionalProperty": [
               {
                 "@type": "PropertyValue",
-                "name": "Emergency Services",
-                "value": "Available as Needed"
+                "name": "Pet Grooming",
+                "value": "Professional grooming services available"
+              },
+              {
+                "@type": "PropertyValue", 
+                "name": "Pet Boarding",
+                "value": "Safe boarding facilities available"
               },
               {
                 "@type": "PropertyValue",
-                "name": "Home Visits",
-                "value": "Available in South Kolkata area"
+                "name": "Diagnostic Lab",
+                "value": "In-house pathology and radiology services"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Emergency Services",
+                "value": "24/7 emergency care available"
               },
               {
                 "@type": "PropertyValue",
                 "name": "Large Animal Care",
-                "value": "Specialized services available"
+                "value": "Specialized veterinary care for cattle, horses, and livestock"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Community Service",
+                "value": "Affordable care and educational workshops"
               }
-            ]
+            ],
+            "hasMap": "https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA"
           })
         }}
       />
