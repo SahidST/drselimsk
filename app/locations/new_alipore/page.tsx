@@ -12,6 +12,12 @@ import {
   CheckCircle,
   Home,
   Stethoscope,
+  Camera,
+  Scissors,
+  Heart,
+  Shield,
+  Users,
+  Activity,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -50,25 +56,94 @@ const NewAliporePage = () => {
 
   const services = [
     {
-      icon: Home,
-      title: "Home Visits",
-      description: "Convenient home visit services in New Alipore, Alipore, and nearby South Kolkata areas. Expert veterinary care at your doorstep for your pet's comfort.",
-    },
-    {
       icon: Stethoscope,
-      title: "Large Animal Care",
-      description: "Specialized care for large animals including cattle, horses, and other livestock. Comprehensive health management and emergency services in the Diamond Harbour Road area.",
+      title: "Comprehensive Health Checkups",
+      description: "Regular wellness examinations including vaccination updates, parasite screening, dental health assessment, and early disease detection to keep your pet healthy throughout their life.",
     },
     {
-      icon: CheckCircle,
-      title: "Surgical Procedures",
-      description: "Advanced surgical capabilities for routine and emergency procedures. Fully equipped facility at our New Alipore clinic with modern surgical equipment.",
+      icon: Activity,
+      title: "Emergency Response",
+      description: "24/7 emergency veterinary services available at our New Alipore clinic. Critical care when you need it most in South Kolkata, with immediate response for life-threatening situations.",
     },
     {
-      icon: Phone,
-      title: "Vaccination Programs",
-      description: "Complete immunization schedules tailored to your pet's age and lifestyle, protecting them from common diseases in the New Alipore region.",
+      icon: Camera,
+      title: "Advanced Diagnostic Services",
+      description: "Our New Alipore clinic features state-of-the-art diagnostic equipment including in-house blood testing, digital X-rays, ultrasound, and comprehensive pathology services for accurate diagnosis.",
     },
+    {
+      icon: Scissors,
+      title: "Professional Pet Grooming",
+      description: "Complete grooming services including bathing, nail trimming, ear cleaning, dental care, and stylish cuts. Our professional groomers ensure your pet looks and feels their best.",
+    },
+    {
+      icon: Home,
+      title: "Safe Boarding Facilities",
+      description: "Going out of town? Our clean, comfortable, and secure pet boarding facilities provide a home-away-from-home experience with 24/7 supervision, regular exercise, and personalized care.",
+    },
+    {
+      icon: Users,
+      title: "Community Service",
+      description: "Dedicated to serving the New Alipore community with affordable veterinary care, community outreach programs, and educational workshops for responsible pet ownership.",
+    },
+  ];
+
+  const specialFeatures = [
+    "Modern diagnostic equipment",
+    "Professional grooming station",
+    "Comfortable boarding facilities",
+    "Specialized surgical suite",
+    "24/7 emergency care",
+    "Large animal care expertise",
+  ];
+
+  const facilities = [
+    {
+      title: "Advanced Diagnostic Lab",
+      description: "In-house pathology, biochemistry testing, and digital radiography",
+      icon: Camera,
+    },
+    {
+      title: "Professional Grooming Station",
+      description: "Complete pet grooming and hygiene services with modern equipment",
+      icon: Scissors,
+    },
+    {
+      title: "Comfortable Boarding Area",
+      description: "Clean, spacious accommodation with 24/7 supervision",
+      icon: Home,
+    },
+    {
+      title: "Modern Surgery Suite",
+      description: "Fully equipped surgical facilities with advanced monitoring systems",
+      icon: Stethoscope,
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: "Gayatri Rai",
+      rating: 5,
+      text: "It was great experience of home visit as I have shifted recently lots of vet are only into money making. Dr. Selim is now added on my list from my fur babies.. Thanks doc for your service and consult.",
+      location: "New Alipore"
+    },
+    {
+      name: "Madhuparna Dalui",
+      rating: 5,
+      text: "From very past days we heard that DOCTOR IS NEXT TO GOD. when we were fully misguided by a group of people, that time Dr. Selim came to us just like a GOD to save our DOG. He is just like a GOD for us. Very very good Doctor. Thanks a lot, we always thankful to him. He is a very helpful person. Whenever you will be in a problem, Dr. Selim is always there to help you. Thank you very much sir. Thank you again. 🙏🏽🙏🏽🙏🏽. Highly recommended DR. SELIM SK.",
+      location: "Alipore"
+    },
+    {
+      name: "Touhid Zafar",
+      rating: 5,
+      text: "Dr Selim sir as very experienced and skilled dr in our town with nice behaviour easily affordable and reasonable fees also examined pets very carefully",
+      location: "Diamond Harbour Road"
+    },
+    {
+      name: "Arti Tandon",
+      rating: 5,
+      text: "Dr Selim is an excellent vet. As caregivers we have got our community furries treated by him, many whose lives he has saved. We have even got treatment for our other rescues like cats, birds and rabbits. What's wonderful about Dr Selim, is that he actually responds to emergencies which is a rarity in Kolkata. He has come early morning before work and even at midnight. Never let his patients down.",
+      location: "South Kolkata"
+    }
   ];
 
   const landmarks = [
@@ -188,10 +263,10 @@ const NewAliporePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            Services Available at New Alipore
+            Our Veterinary Services in New Alipore
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -210,14 +285,129 @@ const NewAliporePage = () => {
         </div>
       </section>
 
+      {/* Meet Dr. Selim Sk - Your Local Veterinarian */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Meet Dr. Selim Sk - Your Local Veterinarian
+          </h2>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <Image
+                  src="/images/dr-selim-profile.webp"
+                  alt="Dr. Selim Sk - Veterinary Doctor & Surgeon at New Alipore clinic"
+                  width={400}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    Dr. Selim Sk
+                  </h3>
+                  <p className="text-slate-600 mb-4">Veterinary Doctor & Surgeon</p>
+                  <div className="flex justify-center mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-slate-600 text-sm">
+                    BVSc & AH Graduate with 3+ years of specialized experience
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  Experienced Veterinary Care in New Alipore
+                </h3>
+                <p className="text-slate-600 mb-6">
+                  Dr. Selim Sk brings years of dedicated experience in veterinary medicine to the New Alipore community. As a qualified Veterinary Doctor & Surgeon, he specializes in comprehensive pet healthcare, from routine wellness exams to complex surgical procedures and large animal care.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { icon: Shield, title: "3+ Years Experience", desc: "Proven expertise in veterinary care" },
+                  { icon: Heart, title: "Compassionate Care", desc: "Gentle approach with all animals" },
+                  { icon: Users, title: "1000+ Happy Clients", desc: "Trusted by pet families" },
+                  { icon: Clock, title: "24/7 Emergency", desc: "Always available when needed" }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <div className="bg-amber-100 p-2 rounded-lg">
+                        <item.icon className="h-4 w-4 text-amber-600" />
+                      </div>
+                      <h4 className="font-semibold text-slate-900">{item.title}</h4>
+                    </div>
+                    <p className="text-slate-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Modern Pet Clinic Facilities */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Modern Pet Clinic Facilities
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {facilities.map((facility, index) => (
+              <div
+                key={index}
+                className="bg-slate-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-200"
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-3 rounded-lg">
+                    <facility.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      {facility.title}
+                    </h3>
+                    <p className="text-slate-600">{facility.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 bg-gradient-to-r from-amber-100 to-orange-100 p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold text-slate-900 text-center mb-6">
+              Why Choose Our New Alipore Clinic?
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {specialFeatures.map((feature, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-amber-600 flex-shrink-0" />
+                  <span className="text-slate-700">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Location Details */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Find Our New Alipore Vet Clinic
+          </h2>
+
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Transportation */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-slate-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                How to Reach
+                How to Reach Our Clinic
               </h3>
 
               <div className="space-y-6">
@@ -410,6 +600,64 @@ const NewAliporePage = () => {
                 Yes, convenient parking is available for both cars and two-wheelers near our clinic on Diamond Harbour Road.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Our Clients Say */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Our Clients Say
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-slate-300 mb-4 text-sm">
+                  &quot;{testimonial.text}&quot;
+                </blockquote>
+                <cite className="text-cyan-400 font-semibold text-sm">
+                  - {testimonial.name}, {testimonial.location}
+                </cite>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center space-x-6 bg-slate-800 px-8 py-6 rounded-2xl">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-400">4.9</div>
+                <div className="text-slate-400 text-sm">Average Rating</div>
+              </div>
+              <div className="w-px h-12 bg-slate-700"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400">1000+</div>
+                <div className="text-slate-400 text-sm">Happy Clients</div>
+              </div>
+              <div className="w-px h-12 bg-slate-700"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-orange-400">24/7</div>
+                <div className="text-slate-400 text-sm">Emergency Care</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href="https://www.google.com/search?q=Dr.+Selim+Sk+Veterinary+Doctor+Surgeon+New+Alipore+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+            >
+              <Star className="h-5 w-5" />
+              <span>Find us on Google</span>
+            </a>
           </div>
         </div>
       </section>
