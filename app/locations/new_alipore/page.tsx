@@ -110,7 +110,7 @@ const NewAliporePage = () => {
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Professional and compassionate veterinary care from the heart of South Kolkata. Our New Alipore clinic, conveniently located at Pet's Need on Diamond Harbour Road, is fully equipped to handle everything from routine checkups to emergencies.
+                Professional and compassionate veterinary care from the heart of South Kolkata. Our New Alipore clinic, conveniently located at Pet&apos;s Need on Diamond Harbour Road, is fully equipped to handle everything from routine checkups to emergencies.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -280,10 +280,10 @@ const NewAliporePage = () => {
 
               <div className="mt-6 p-4 bg-green-50 rounded-lg">
                 <h4 className="font-semibold text-slate-900 mb-2">
-                  Pet's Need
+                  Pet&apos;s Need
                 </h4>
                 <p className="text-sm text-slate-600">
-                  Located at Pet's Need pet shop on Diamond Harbour Road for easy identification
+                  Located at Pet&apos;s Need pet shop on Diamond Harbour Road for easy identification
                 </p>
               </div>
             </div>
@@ -378,7 +378,7 @@ const NewAliporePage = () => {
                 Where exactly is Dr. Selim SK&apos;s New Alipore clinic located?
               </h3>
               <p className="text-slate-600">
-                Our clinic is located at {locationDetails.fullAddress}. We are situated at Pet's Need pet shop, making it easy to find. The clinic is near Majherhat Railway Station and easily accessible via Diamond Harbour Road.
+                Our clinic is located at {locationDetails.fullAddress}. We are situated at Pet&apos;s Need pet shop, making it easy to find. The clinic is near Majherhat Railway Station and easily accessible via Diamond Harbour Road.
               </p>
             </div>
             
@@ -443,7 +443,7 @@ const NewAliporePage = () => {
 
           <div className="mt-8 text-amber-100">
             <p>
-              Located at Pet's Need, Diamond Harbour Road • Easy access from Majherhat Station • Postal Code: {locationDetails.postalCode}
+              Located at Pet&apos;s Need, Diamond Harbour Road • Easy access from Majherhat Station • Postal Code: {locationDetails.postalCode}
             </p>
           </div>
         </div>
