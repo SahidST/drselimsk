@@ -78,6 +78,14 @@ export default function RootLayout({
                   "addressRegion": "West Bengal",
                   "postalCode": "700060", 
                   "addressCountry": "IN"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Pet's Need, 10/1D, Diamond Harbour Rd, Alipore",
+                  "addressLocality": "New Alipore, Kolkata",
+                  "addressRegion": "West Bengal",
+                  "postalCode": "700027",
+                  "addressCountry": "IN"
                 }
               ],
               "openingHours": "Mo-Su 09:00-20:00",
